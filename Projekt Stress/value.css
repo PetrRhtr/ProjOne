@@ -1,0 +1,25 @@
+.values-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.values-list h1 {
+    margin-top: 10rem;
+    font-size: 9vw;
+    margin-bottom: 0;
+}
+.values-list ol {
+    color: white;
+    
+}
+.values-list ol li {
+    padding: 20px;
+    border-bottom: 1px solid #b49191;
+}

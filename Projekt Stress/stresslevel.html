@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breatheIN <> breatheOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <h1 class="fade-in">breatheIN <code><></code> breatheOUT</h1>
+    <div class="slider-container">
+        <div class="player-container">
+            <audio id="audioPlayer" src="../src/audio/Artur Aravidi - Amazing World.mp3.mp3"></audio>
+            <button class="play-pause-button" id="playPauseButton">Play</button>
+        </div>
+        <label for="myRange">how stressed you are ?</label>
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
+        <div class="value" id="sliderValue">0</div>
+        <div id="chartContainer">
+            <canvas id="valueChart"></canvas>
+        </div>
+        <a class="val-button" href="../value.html">Show All Values</a>
+
+    </div>
+    <footer><p>Copyright &copy; 2024 Peter Richter</p></footer>
+    <script src="script.js"></script>
+    <script src="audio.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

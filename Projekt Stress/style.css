@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Multipie";
+  src: url(/src/fonts/Multipie.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url(../src/images/DALL·E21.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("../src/images/DALL·E20.webp");
+    background-attachment: fixed;
+  }
+  .play-pause-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5%;
+    font-size: 1.5rem;
+    font-family: 'Multipie';
+    position: relative;
+    bottom: 60px;
+  }
+}
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 8rem;
+  font-family: "Multipie";
+  font-size: 10vw;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 4s ease-in-out forwards;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  color: white;
+}
+
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: rgb(210, 206, 206);
+  font-size: 14px;
+  font-style: italic;
+  opacity: 1;
+}
+
+.butt-box {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #f7d6b4;
+  box-shadow: 1px 1px 2px black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #93bcba;
+}
+
+#stressValue {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 10px;
+}
+
+/* Ab hier beginnt das styling für den slider*/
+
+
+.play-pause-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-family: 'Multipie';
+  position: relative;
+  bottom: 60px;
+}
+
+.slider-container {
+  text-align: center;
+}
+.slider {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgb(138, 233, 138),rgb(230, 214, 72), rgb(233, 129, 129));
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 40px;
+  border-radius: 5px;
+  background: #010000;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.value {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+
+.val-button{
+  font-family: multipie;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(75, 192, 192, 1);
+  border-radius: 5px;
+  padding: 0.3rem;
+  position: relative;
+  top: 2rem;
+  
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 2rem;
+}
+
+fieldset input{
+  height: 2rem;
+  background-color: #93bcba;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea{
+  height: 5rem;
+  background-color: #93bcba;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input [type="submit"]{
+  width: 100px;
+  background-color: #93bcba;
+}
+
+.me{
+  background-image: url(../src/images/me.jpeg);
+  width: 19rem;
+  height: 7rem;
+  border-radius: 50%;
+}
